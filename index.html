@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Awesome Wether App!</title>
+</head>
+
+<body>
+
+
+    <div class="container my-4 cont">
+
+        <div class="outer container my-2 mx-auto myH1">
+            <h1 class="my-3">Get any city's weather details</h1>
+
+            <div class="mx-auto">
+
+                <form id="cityForm" class="outer my-3">
+                    <div class="input-group ">
+                        <input type="text" id="cityInput" class="form-control" placeholder="City's Name"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-warning" type="button" id="submitBtn">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div id="weatherCard" class="card imgCard bg-dark text-white mx-auto d-none">
+            <img src="./images/nighttime.jpg" class="card-img" id="bgImg" alt="err">
+
+            <div class="card-img-overlay">
+
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <h1 class="my-3 id=" id="temperature">7 &deg;C</h1>
+                    <div id="iconCont">
+                        <img id="iconInfo" src="./images/icons/26.svg" alt="">
+                    </div>
+                    <h3 class="my-3" id="weatherInfo">Sunny</h3>
+                </div>
+
+                <div>
+                    <h1 id="cityName">Delhi</h1>
+                    <hr>
+                    <h5 id="time">21:30</h5>
+                    <h5 id="fullDate">Saturday</h5>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="errorBox" class="disMsg d-none my-2">
+            <p>Something went wrong.</p>
+            <p>Please input correct location.</p>
+            <p>Check your internet connection or there may be a bad request.</p>
+        </div>
+        <div id="homeCard" class="disMsg my-2">
+            <p>We provide weather information all over the world</p>
+            <img id="weatherAnim" src="./images/wether.gif" alt="weather animation">
+        </div>
+
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/weather.js"></script>
+
+</body>
+
+</html>

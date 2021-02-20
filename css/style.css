@@ -1,0 +1,68 @@
+body {
+    background: rgb(226, 226, 226);
+    height: 100vh;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#weatherAnim {
+    height: 14rem;
+    width: 14rem;
+    border-radius: 2rem;
+}
+
+.cont {
+    height: 30rem;
+    width: 30rem;
+}
+
+.outer {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.myH1 {
+    text-align: center;
+}
+
+#weatherInfo,
+#temperature {
+    text-align: center;
+}
+
+.imgCard {
+    box-shadow: 0px 5px 10px 2px black;
+}
+
+#iconInfo {
+    background-color: rgba(255, 255, 255, 0.767);
+    border-radius: 6rem;
+}
+#iconCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* When there is some error in fetching data */
+.disMsg {
+    border: 2px dotted #ffc107;
+    border-radius: 2rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1rem;
+}
