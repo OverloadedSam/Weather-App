@@ -16,7 +16,7 @@ const homeCard = document.getElementById("homeCard");
 
 // When city is found then displaying the results
 const updateUI = (data) => {
-    const { cityDetails, cityWeather } = data; // Destructuring of data into to separate objects.
+    const { cityDetails, cityWeather } = data; // Destructuring of data into separate objects.
 
     weatherCard.classList.remove("d-none"); // Only display results if data fetches properly.
     errorBox.classList.add("d-none");

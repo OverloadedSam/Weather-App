@@ -1,4 +1,4 @@
-const apiKey = "Ez9qxrAYJWqzwnREMEH9YUYOEIsOYESC";
+const apiKey = "yBS0JAz9LGQJLSV6WxDFYqy4B263PNxm";
 const resourceUrl =
     "http://dataservice.accuweather.com/locations/v1/cities/search";
 
